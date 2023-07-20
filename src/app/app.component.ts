@@ -3,8 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: [
+    '.block1 {background-color:#d5f4e6;margin:10px;padding:10px;}',
+    '.block2 {background-color:#d5f4ff;margin:10px;padding:10px;}',
+    '.block3 {background-color:#d5cce6;margin:10px;padding:10px;}',
+  ],
 })
 export class AppComponent {
-  title = 'ch13-ex300';
+  selection = 'name';
+  options = ['name', 'address', 'other'];
 }
